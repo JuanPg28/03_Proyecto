@@ -1,0 +1,121 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: Nitti, Courier New, monospace;
+    background: #ed7b49;
+    ;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: left;
+}
+
+.columLogo {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.columLogo #circulo {
+    position: relative;
+    top: 0%;
+    left: 5%;
+    width: 200px;
+    margin: -60px 0 0 -60px;
+    -webkit-animation: spin 30s linear infinite;
+    -moz-animation: spin 30s linear infinite;
+    animation: spin 30s linear infinite;
+    margin: 10px;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.columLogo #film {
+    width: 100px;
+    position: absolute;
+    left: 705px;
+    top: 140px;
+}
+
+.columOne {
+    width: 40%;
+    height: 700px;
+    margin-top: 80px;
+    margin-right: 70px;
+    border-radius: 0px 160px 0px 0px;
+    background-color: rgb(202, 104, 87);
+    padding-left: 150px;
+    padding-right: 60px;
+}
+
+.columOne h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: Canela,PF Regal Display Pro,Times New Roman,serif;
+    font-size: 6em;
+}
+
+.columOne h2 {
+    margin-bottom: 5px;
+    font-family: Canela,PF Regal Display Pro,Times New Roman,serif;
+    font-size: 2.5em;
+}
+
+.columTwo {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.columTwo #fondo1-film  {
+    width: 350px;
+    height: 518.88px;
+    position: absolute;
+    top: 510px;
+    right: 200px;
+    transform: rotate(-10deg);
+}
+
+.columTwo #fondo2-film  {
+    width: 350px;
+    height: 518.88px;
+    position: absolute;
+    top: 510px;
+    right: 50px;
+    transform: rotate(+10deg);
+    filter: invert(41%) sepia(65%) saturate(5795%) hue-rotate(143deg) brightness(89%) contrast(102%);
+}
+
+.columTwo #portada-film {
+    position: absolute;
+    top: 510px;
+    left: 900px;
+    transition: 1s;
+}
+
+.columTwo #portada-film:hover {
+    width: 400px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

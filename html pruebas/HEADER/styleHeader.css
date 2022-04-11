@@ -96,3 +96,7 @@ a:hover {
 .cover-page-img2 img {
     width: 550px;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
